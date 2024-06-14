@@ -1,4 +1,4 @@
-export function fetchJSONData(path) {
+function fetchJSONData(path) {
     fetch(path)
         .then((res) => {
             if (!res.ok) {
