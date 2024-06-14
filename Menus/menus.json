@@ -1,0 +1,24 @@
+{
+  "Menus": [
+    {
+      "show": false,
+      "title": "Drinks",
+      "items": [
+        {
+          "name": "Paloma",
+          "description": "it is alcoholic"
+        }
+      ]
+    },
+    {
+      "show": false,
+      "title": "Food",
+      "items": [
+        {
+          "name": "Chorizo Burrito",
+          "description": "it is delicious"
+        }
+      ]
+    }
+  ]
+}
