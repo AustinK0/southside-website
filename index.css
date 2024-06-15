@@ -6,7 +6,7 @@
 
 body {
     text-align: center;
-    padding: 0;
+    padding: 0px;
     font-family: 'Times New Roman';
     background: var(--ssBlue)
 }
@@ -33,22 +33,3 @@ button {
     font-size: 200%;
     color: white;
 }
-
-.mobile {
-    display: none
-}
-
-.desktop {
-    display: block
-}
-
-@media (max-width:1200px) {
-    .desktop {
-        display: none
-    }
-
-    .mobile {
-        display: block
-    }
-}
-
