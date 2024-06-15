@@ -1,25 +1,15 @@
-function createButtons() {
+async function createButtons() {
     var container = document.getElementById("menuDiv");
-    var data = fetchJSONData("./Menus/menus.json");
+
+    const response = await fetch("./Menus/menus.json");
+    const data = await response.json();
     console.log(data);
+
+    console.log(movies);
 
     data.menus.forEach(menu => {
         var button = document.createElement("button");
         button.innerText = menu.title;
         container.appendChild(button);
     });
-}
-
-async function fetchJSONData(path) {
-    var data = await fetch(path)
-        .then((res) => {
-            if (!res.ok) {
-                throw new Error
-                    (`HTTP error! Status: ${res.status}`);
-            }
-            return res.json();
-        })
-        .catch((error) =>
-            console.error("Unable to fetch data:", error));
-    return data;
 }
