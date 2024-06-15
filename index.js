@@ -1,9 +1,12 @@
 function createButtons() {
-    //var container = document.getElementById("menuDiv");
+    var container = document.getElementById("menuDiv");
     var data = fetchJSONData("./Menus/menus.json");
-    console.log(data);
+    data.Menus.forEach(menu => {
+        var button = document.createElement("button");
+        button.innerText = menu.title;
+        container.appendChild(button);
+    });
 }
-
 function fetchJSONData(path) {
     fetch(path)
         .then((res) => {
