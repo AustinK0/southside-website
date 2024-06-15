@@ -1,3 +1,5 @@
+window.onload = createButtons;
+
 async function createButtons() {
     var container = document.getElementById("menuDiv");
     var loader = document.getElementById("loadButton");
