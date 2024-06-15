@@ -59,7 +59,7 @@ h1 {
 }
 
     .two-column-list li {
-        margin-bottom: 20px;
+        margin: 15px;
     }
 
     .two-column-list h2 {
@@ -71,12 +71,8 @@ h1 {
         margin-bottom: 0;
     }
 
-@media (max-width:1200px) {
-    .desktop {
-        display: none
-    }
-
-    .mobile {
-        display: block
+@media (max-width: 1000px) {
+    .two-column-list {
+        column-count: 1; /* Change to one column on smaller screens */
     }
 }
