@@ -1,7 +1,7 @@
 {
   "menus": [
     {
-      "show": false,
+      "show": true,
       "title": "Drinks",
       "items": [
         {
@@ -11,7 +11,7 @@
       ]
     },
     {
-      "show": false,
+      "show": true,
       "title": "Food",
       "items": [
         {

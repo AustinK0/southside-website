@@ -1,13 +1,25 @@
+window.onload = createButtons;
+
 async function createButtons() {
     var container = document.getElementById("menuDiv");
 
-    const response = await fetch("./Menus/menus.json");
-    const data = await response.json();
-    console.log(data);
+    try {
+        const response = await fetch("./Menus/menus.json");
+        const data = await response.json();
 
-    data.menus.forEach(menu => {
-        var button = document.createElement("button");
-        button.innerText = menu.title;
-        container.appendChild(button);
-    });
+        data.menus.forEach(menu => {
+            if (menu.show) {
+                var button = document.createElement("button");
+                button.innerText = menu.title;
+
+                button.onclick = function () {
+                    window.location.href = `./Menus/${menu.title}.html`;
+                };
+
+                container.appendChild(button);
+            }
+        });
+    } catch (error) {
+        console.error("Failed to fetch menus:", error);
+    }
 }
