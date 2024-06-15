@@ -5,41 +5,56 @@
 }
 
 body {
-    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: var(--ssLightBlue);
+    margin: 0;
     padding: 0;
-    font-family: 'Times New Roman';
-    background: var(--ssBlue)
 }
 
-.name {
+header {
+    background-color: var(--ssBlue); /* Blue header */
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.description {
     color: var(--ssWhite)
 }
-
-.description {
-    color: var(--ssLightBlue)
+h1 {
+    margin: 0;
+    font-size: 2em;
 }
 
-button {
-    padding: 10px 20px;
-    margin: 5px;
-    border: none;
-    border-radius: 25px; /* This creates the rounded effect */
-    color: white; /* Text color */
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    background-color: var(--ssLightBlue)
+.main {
+    padding: 20px;
 }
 
-.mobile {
-    display: none
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: var(--ssBlue);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.desktop {
-    display: block
+.two-column-list {
+    column-count: 2;
+    list-style-type: none;
+    padding: 0;
 }
+
+    .two-column-list li {
+        margin-bottom: 20px;
+    }
+
+    .two-column-list h2 {
+        margin-bottom: 10px;
+        color: var(--ssLightBlue); /* Blue color for item names */
+    }
+
+    .two-column-list p {
+        margin-bottom: 0;
+    }
 
 @media (max-width:1200px) {
     .desktop {

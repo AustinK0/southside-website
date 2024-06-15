@@ -1,7 +1,7 @@
-window.onload = createButtons;
-
 async function createButtons() {
     var container = document.getElementById("menuDiv");
+    var loader = document.getElementById("loadButton");
+    loader.style.display = "none";
 
     try {
         const response = await fetch("./Menus/menus.json");

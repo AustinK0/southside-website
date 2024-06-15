@@ -6,7 +6,35 @@
       "items": [
         {
           "name": "Paloma",
-          "description": "it is alcoholic"
+          "description": "A refreshing Mexican cocktail made with tequila, grapefruit juice, and lime, served over ice."
+        },
+        {
+          "name": "Espresso Martini",
+          "description": "Made with vodka, coffee liqueur, and a hint of simple syrup, shaken with ice and strained into a chilled martini glass."
+        },
+        {
+          "name": "Spicy Pineapple Martini",
+          "description": "Vodka infused with spice, combined with pineapple juice and a hint of lime juice, served in a chilled martini glass."
+        },
+        {
+          "name": "Cosmopolitan",
+          "description": "A popular cocktail made with vodka, triple sec, cranberry juice, and a splash of fresh lime juice"
+        },
+        {
+          "name": "Classic Martini",
+          "description": "Made with gin and dry vermouth, served in a chilled martini glass"
+        },
+        {
+          "name": "Manhattan",
+          "description": "A classic cocktail made with whiskey, sweet vermouth, and a dash of aromatic bitters"
+        },
+        {
+          "name": "Old Fashioned",
+          "description": "A simple cocktail consisting of whiskey, sugar, bitters, and ice, garnished with an orange twist and served in a rocks glass"
+        },
+        {
+          "name": "Blackberry Lemonade",
+          "description": "A refreshing blend of Blackberry Crown whiskey and freshly squeezed lemonade"
         }
       ]
     },
@@ -16,6 +44,10 @@
       "items": [
         {
           "name": "Chorizo Burrito",
+          "description": "it is delicious"
+        },
+        {
+          "name": "Smash Burger",
           "description": "it is delicious"
         }
       ]

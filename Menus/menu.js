@@ -10,19 +10,20 @@ async function display() {
     const menu = data.menus.find(menu => menu.title == menuName);
 
     menu.items.forEach(item => {
-        var itemDiv = document.createElement("div");
-        var name = document.createElement("h3");
-        var description = document.createElement("h5");
+        var listItem = document.createElement("li");
+        var name = document.createElement("h2");
+        var description = document.createElement("p");
 
-        name.className = "name"
-        description.className = "description"
-        itemDiv.className = "item"
+        name.className = "name";
+        description.className = "description";
+        listItem.className = "item";
 
         name.innerHTML = item.name;
         description.innerHTML = item.description;
 
-        itemDiv.appendChild(name);
-        itemDiv.appendChild(description);
-        container.appendChild(itemDiv);
+        listItem.appendChild(name);
+        listItem.appendChild(description);
+
+        container.appendChild(listItem);
     });
 }
