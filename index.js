@@ -10,7 +10,7 @@ function createButtons() {
     });
 }
 
-function fetchJSONData(path) {
+async function fetchJSONData(path) {
     var data = await fetch(path)
         .then((res) => {
             if (!res.ok) {
