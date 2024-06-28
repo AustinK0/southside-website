@@ -11,6 +11,10 @@ body {
     background: var(--ssBlue)
 }
 
+#spotifyLink {
+    color: var(--ssWhite)
+}
+
 #logo {
     max-width: 95%;
 }
