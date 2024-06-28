@@ -1,4 +1,4 @@
-window.onload = createButtons;
+//window.onload = createButtons;
 
 async function createButtons() {
     var container = document.getElementById("menuDiv");
