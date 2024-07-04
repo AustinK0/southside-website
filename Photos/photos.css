@@ -12,6 +12,9 @@ img {
 body {
     background-color: var(--ssBlue);
 }
+#imgContainer {
+    text-align: center;
+}
 
 button {
     padding: 10px 20px;
@@ -24,5 +27,15 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    background-color: var(--ssLightBlue)
+    background-color: var(--ssLightBlue);
+    position: sticky;
+    top: 15px;
+    z-index: 1000; /* Ensure button is above other content */
+}
+
+@media (min-width: 1200px) {
+    img {
+        max-width: 68%;
+        margin: 1%;
+    }
 }
