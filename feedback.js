@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     // Target the form element
     const form = document.getElementById('reviewForm');
@@ -7,17 +8,23 @@ document.addEventListener('DOMContentLoaded', function () {
         event.preventDefault(); // Prevent default form submission
 
         // Get form data
+        const rating = document.querySelector('input[name="rating"]:checked');
         const firstName = document.getElementById('first_name').value;
         const lastName = document.getElementById('last_name').value;
 
-        // Detect Stevie
+        // Check if rating is selected
+        if (!rating) {
+            alert("Please select a rating.");
+            return;
+        }
 
-        if (firstName.toLowerCase().startsWith("stev") && lastName.toLowerCase() == "mayor") {
-            alert("That review appears to be inaccurate\nYou will now be redirected to a site better fit for you, Mr. Mayor")
-            window.location.href = "https://joebiden.com/"
+        // Handle rating
+        if (rating.value < 5) {
+            alert(`That review appears to be inaccurate. You will now be redirected to a site better fit for you, ${firstName} ${lastName}`);
+            window.location.href = "https://joebiden.com/";
         } else {
-            alert("Submission failed: ERROR CODE 404, Please try again later");
-            window.location.href = "./index.html"
+            alert("Thank you for the review, you will now be redirected to the homepage");
+            window.location.href = "./index.html";
         }
 
         // Optionally, you can reset the form after submission
