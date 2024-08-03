@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cousin Olympics</title>
+    <style>
+        :root {
+            --ssBlue: rgb(0,28,76);
+            --ssWhite: rgb(220,204,194);
+            --ssLightBlue: rgb(0,63,147);
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #4682b4;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+            header h1 {
+                color: white;
+            }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        h1, p {
+            text-align: center;
+            color: #4682b4;
+        }
+
+        .event {
+            background-color: #e6f2ff;
+            border: 1px solid #b3d1ff;
+            border-radius: 10px;
+            margin: 10px 0;
+            padding: 15px;
+        }
+
+            .event h2 {
+                margin: 0;
+                color: #1e90ff;
+            }
+
+        #button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 25px; /* This creates the rounded effect */
+            color: white; /* Text color */
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            background-color: var(--ssLightBlue)
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cousin Olympics</h1>
+        <button id="button" onclick="window.location.href='./index.html'">Back</button>
+    </header>
+    <main>
+        <h1>Event Schedule</h1>
+        <p>(Events and order of events not final)</p>
+        <div class="event">
+            <h2>Beer Relay</h2>
+        </div>
+        <div class="event">
+            <h2>Flip Cup</h2>
+        </div>
+        <div class="event">
+            <h2>Sack Race</h2>
+        </div>
+        <div class="event">
+            <h2>Egg Relay</h2>
+        </div>
+        <div class="event">
+            <h2>Cup Pyramaid</h2>
+        </div>
+        <div class="event">
+            <h2>Pool Race</h2>
+        </div>
+        <div class="event">
+            <h2>Beer Pong</h2>
+        </div>
+        <div class="event">
+            <h2>Cornole Tournament</h2>
+        </div>
+        <div class="event">
+            <h2>Wiffleball / Kickball / Volleyball</h2>
+        </div>
+        <div class="event">
+            <h2>Water Balloon Toss</h2>
+        </div>
+    </main>
+</body>
+</html>
