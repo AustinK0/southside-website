@@ -2,7 +2,7 @@ window.onload = generateImages;
 
 function generateImages() {
     const imageContainer = document.getElementById('imgContainer');
-    const numImages = 35; // Number of images to generate
+    const numImages = 2; // Number of images to generate
 
     for (let i = 1; i <= numImages; i++) {
         const img = document.createElement('img');
