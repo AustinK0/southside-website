@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Handle rating
         if (rating.value < 5) {
             alert(`That review appears to be inaccurate. You will now be redirected to a site better fit for you, ${firstName} ${lastName}`);
-            window.location.href = "https://joebiden.com/";
+            window.location.href = "https://gavinnewsom.com/";
         } else {
             alert("Thank you for the review, you will now be redirected to the homepage");
             window.location.href = "./index.html";
