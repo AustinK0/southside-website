@@ -1,4 +1,42 @@
 
+function displayMessage(message, redirectUrl) {
+    // Create a message container
+    const messageContainer = document.createElement('div');
+    messageContainer.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10000;
+    `;
+
+    // Create the text element
+    const messageText = document.createElement('div');
+    messageText.style.cssText = `
+        color: white;
+        font-size: 3rem;
+        text-align: center;
+        padding: 40px;
+        max-width: 80%;
+        line-height: 1.4;
+        font-weight: bold;
+    `;
+    messageText.textContent = message;
+
+    messageContainer.appendChild(messageText);
+    document.body.appendChild(messageContainer);
+
+    // Redirect after 3 seconds
+    setTimeout(function () {
+        window.location.href = redirectUrl;
+    }, 5000);
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     // Target the form element
     const form = document.getElementById('reviewForm');
@@ -20,11 +58,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Handle rating
         if (rating.value < 5) {
-            alert(`That review appears to be inaccurate. You will now be redirected to a site better fit for you, ${firstName} ${lastName}`);
-            window.location.href = "https://gavinnewsom.com/";
+            displayMessage(`That review appears to be inaccurate. You will now be redirected to a site better fit for you, ${firstName} ${lastName}`, "https://gavinnewsom.com/");
         } else {
-            alert("Thank you for the review, you will now be redirected to the homepage");
-            window.location.href = "./index.html";
+            displayMessage("Thank you for the review, you will now be redirected to the homepage", "./index.html");
         }
 
         // Optionally, you can reset the form after submission
